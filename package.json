@@ -1,0 +1,15 @@
+{
+  "name": "gaylonalfano.com_vuepress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gaylon Alfano",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/theme-blog": "^1.0.0-beta.6",
+    "vuepress": "^0.14.11"
+  },
+  "scripts": {
+    "src:dev": "vuepress dev src",
+    "src:build": "vuepress build src"
+  }
+}
