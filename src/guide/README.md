@@ -1,7 +1,7 @@
 ---
 navbar: true
-sidebar: false
+# sidebar: false
 ---
-# Guide page
-## h2 header
-### h3 header
+# Guide h1
+## Guide h2
+### Guide h3

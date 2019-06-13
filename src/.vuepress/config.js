@@ -3,22 +3,25 @@ module.exports = {
   description: 'Just playing around',
   themeConfig: {
     // logo: '/public/logo.png',
-    sidebar: [
-      '/',
-      '/guide/',
-      ['/test/', 'Explicit link text']
-    ],
     nav: [{
         text: 'Home',
         link: '/'
+      },
+      {
+        text: 'Nested1',
+        link: '/nested1/'
+      },
+      {
+        text: 'Nested2',
+        link: '/nested2/'
       },
       {
         text: 'Guide',
         link: '/guide/'
       },
       {
-        text: 'External',
-        link: 'https://google.com'
+        text: 'Sidebar',
+        link: '/sidebar/'
       },
       {
         text: 'Languages',
@@ -26,10 +29,6 @@ module.exports = {
           text: 'Chinese',
           link: '/language/chinese'
         }]
-      },
-      {
-        text: 'Test',
-        link: '/test/'
       },
       {
         text: 'Sub Groups',
@@ -41,7 +40,42 @@ module.exports = {
           }]
         }]
       }
-    ]
+    ],
+    // sidebar: {
+    //   '/nested1/': [
+    //     '',
+    //     'one',
+    //     'two'
+    //   ],
+
+    //   '/nested2/': [
+    //     '',
+    //     'three',
+    //     'four'
+    //   ],
+
+    //   // fallback
+    //   '/': [
+    //     '',
+    //     'guide',
+    //     'sidebar'
+    //   ],
+    // },
+    sidebar: [{
+        title: 'Sidebar Group1',
+        children: [
+          '/',
+          '/guide/',
+          '/sidebar/',
+        ]
+      },
+      '/',
+      '/guide/',
+      ['/sidebar/', 'Explicit link text']
+    ],
+    sidebarDepth: 2,
+    displayAllHeaders: true,
+    // activeHeaderLinks: false // Default: true
   },
   footer: {
     contact: [{
@@ -51,7 +85,7 @@ module.exports = {
       {
         type: 'twitter',
         link: 'https://twitter.com/gaylonalfano',
-      },
+      }
     ],
   },
 }
