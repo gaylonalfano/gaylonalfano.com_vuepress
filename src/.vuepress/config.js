@@ -26,7 +26,7 @@ module.exports = {
       {
         text: 'Languages',
         items: [{
-          text: 'Chinese',
+          text: '中文',
           link: '/language/chinese'
         }]
       },
@@ -59,7 +59,7 @@ module.exports = {
     //     '',
     //     'guide',
     //     'sidebar'
-    //   ],
+    //   ]
     // },
     sidebar: [{
         title: 'Sidebar Group1',
