@@ -1,9 +1,11 @@
 module.exports = {
-  title: 'Hello VuePress',
-  description: 'Just playing around',
+  title: 'Gaylon Alfano',
+  description: 'My name is Gaylon Alfano.',
   themeConfig: {
+    domain: 'https://www.gaylonalfano.com',
     // logo: '/public/logo.png',
-    // lastUpdated: true,
+    lastUpdated: true,
+    docsDir: 'src',
     nav: [{
         text: 'Home',
         link: '/'
@@ -25,55 +27,48 @@ module.exports = {
         link: '/sidebar/'
       },
       {
-        text: 'Languages',
+        text: 'Learning',
         items: [{
-          text: '中文',
-          link: '/language/chinese'
-        }]
+            text: '中文',
+            link: '/learning/chinese/'
+          },
+          {
+            text: 'Programming',
+            link: '/learning/programming/'
+          }
+        ]
       },
       {
-        text: 'Sub Groups',
+        text: 'Learning',
         items: [{
-          text: 'Group1',
+          text: 'Programming',
           items: [{
-            text: 'subitem1',
-            link: '/subgroup/group1/subitem1'
+            text: 'Python',
+            link: '/learning/programming/python'
           }]
         }]
       }
     ],
-    // sidebar: {
-    //   '/nested1/': [
-    //     '',
-    //     'one',
-    //     'two'
-    //   ],
+    sidebar: {
+      '/learning/programming/': [
+        '',
+        'python',
+        'django-rest-framework'
+      ],
 
-    //   '/nested2/': [
-    //     '',
-    //     'three',
-    //     'four'
-    //   ],
+      '/nested2/': [
+        '',
+        'three',
+        'four'
+      ],
 
-    //   // fallback
-    //   '/': [
-    //     '',
-    //     'guide',
-    //     'sidebar'
-    //   ]
-    // },
-    sidebar: [{
-        title: 'Sidebar Group1',
-        children: [
-          '/',
-          '/guide/',
-          '/sidebar/',
-        ]
-      },
-      '/',
-      '/guide/',
-      ['/sidebar/', 'Explicit link text']
-    ],
+      // fallback
+      '/': [
+        '',
+        'guide',
+        'sidebar'
+      ]
+    },
     sidebarDepth: 2,
     displayAllHeaders: true,
     // activeHeaderLinks: false // Default: true
