@@ -3,6 +3,7 @@ module.exports = {
   description: 'Just playing around',
   themeConfig: {
     // logo: '/public/logo.png',
+    // lastUpdated: true,
     nav: [{
         text: 'Home',
         link: '/'
